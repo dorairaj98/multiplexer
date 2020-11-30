@@ -4,6 +4,5 @@ class myplexer:
          user_input = input("enter Input: ")
          if user_input == arg:
             print(func())
-            func()
       return inner
 
