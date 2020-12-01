@@ -1,8 +1,10 @@
 class myplexer:
-   def route(self, arg):
-      def inner(func):
-         user_input = input("enter Input: ")
-         if user_input == arg:
-            print(func())
-      return inner
+   def run(self):
+       user_input = input("enter Input: ")
+       return user_input
 
+   def route(self, arg):
+       def inner(func):
+           if arg == self.run():
+               print(func())
+       return inner
